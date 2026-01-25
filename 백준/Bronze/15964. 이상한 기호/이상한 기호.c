@@ -2,10 +2,10 @@
 
 int main(void)
 {
-    int A, B;
-    int result;
-    scanf("%d %d", &A, &B);
+    long long A, B;
+    long long result;
+    scanf("%lld %lld", &A, &B);
     result = (A+B)*(A-B);
-    printf("%d", result);
+    printf("%lld", result);
     return 0;
 }
