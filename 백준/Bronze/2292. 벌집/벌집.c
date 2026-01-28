@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main(void) 
+{
+    int N;
+    scanf("%d", &N);
+
+    if (N == 1) 
+    {
+        printf("1");
+        return 0;
+    }
+
+    int layer = 1;      
+    int max_room = 1;   
+    int add = 6;       
+
+    while (1) 
+    {
+        if (max_room >= N) 
+        {
+            break;
+        }
+        max_room += add * layer;
+        layer++;
+    }
+
+    printf("%d", layer);
+
+    return 0;
+}
